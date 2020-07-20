@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<style type="text/css">
+		html {
+			background-color: #008080;
+		}
+		.Boite {
+			height: 500px;
+			width: 420px;
+			top: 40px;
+			background-color: #00B2B2;
+			position: relative;			
+			box-shadow: 0 10px 20px black;
+			border: 2px solid black;
+			border-radius: 15px;
+			margin: auto;	
+		}
+		.Boule {
+			height: 20px;
+			width: 20px;
+			border-radius: 50%;
+			position: absolute;
+			background-color: #6D0000;
+			border: 1px solid black;
+			top: 50px;
+			box-shadow: 3px 3px 10px #8F0000;
+			animation-name: rebond;
+			animation-duration: 2.5s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes rebond{
+			50% {
+				top: 400px;
+				transform: scale(2);
+			}
+			50.1% {
+				bottom: 300px;
+				transform: scale(1);
+			}
+			100% {
+				top: 80px;
+				transform: scale(2);
+			}
+
+		}
+		#boule1 {
+			left: 50px;
+			animation-timing-function: cubic-bezier(0.5, 0.9, 0.9, 0.9);
+		}
+		#boule2 {
+			left: 100px;
+			animation-timing-function: cubic-bezier(0.3, 0.15, 1, 0.1);
+		}
+		#boule3 {
+			left: 150px;
+			animation-timing-function: cubic-bezier(0.3, 0.2, 1, 0.1);
+		}
+		#boule4 {
+			left: 200px;
+			animation-timing-function: cubic-bezier(0.3, 0.25, 1, 0.1);
+		}
+		#boule5 {
+			left: 250px;
+			animation-timing-function: cubic-bezier(0.3, 0.3, 1, 0.1);
+		}
+		#boule6 {
+			left: 300px;
+			animation-timing-function: cubic-bezier(0.3, 0.35, 1, 0.1);
+		}
+		#boule7 {
+			left: 350px;
+			animation-timing-function: cubic-bezier(0.3, 0.4, 1, 0.1);
+	</style>
+
+	<div class="Boite">
+		<div class="Boule" id="boule1"></div>
+		<div class="Boule" id="boule2"></div>
+		<div class="Boule" id="boule3"></div>
+		<div class="Boule" id="boule4"></div>
+		<div class="Boule" id="boule5"></div>
+		<div class="Boule" id="boule6"></div>
+		<div class="Boule" id="boule7"></div>
+	</div>
+	
+
+</html>

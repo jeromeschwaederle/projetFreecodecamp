@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Corporate</title>
+		<meta charset="utf-8">
+		<link href="https://fonts.googleapis.com/css2?family=Hepta+Slab:wght@600&display=swap" rel="stylesheet">
+	</head>
+
+	<style type="text/css">
+		body {
+			font-family: 'Hepta Slab', serif;
+			background-color: #FFFCDA;
+			bac
+		}
+		#header {
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: #FFF89B;
+		}
+		#header-img {
+			margin: 10px 0px 10px 30px;
+			width: 60px;
+		}
+		#nav-bar {
+			margin-right: 30px;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-between;
+			width: 50%;
+			max-width: 400px;
+			min-width: 280px;
+		}
+		main {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		#form {
+			margin-top: 90px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		#ancre1 {
+			margin-top: 0px;
+		}
+		#video {
+			margin-top: 40px;
+			border-radius: 10px;
+			max-width: 100%;
+		}
+		label {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 50px;
+		}
+		#email {
+			margin-top: 20px;
+			border-radius: 5px;
+			height: 30px;
+			width: 300px;
+		}
+		#submit {
+			background-color: #ECDA02;
+			border-radius: 5px;
+			width: 100px;
+			height: 50px;
+			margin-top: 30px;
+		}
+		#submit:hover {
+			box-shadow: 0 10px 20px rgba(0,0,0,0.25), 0 6px 6px rgba(0,0,0,0.3);
+		}
+		.nav-link {
+			color: black;
+			text-decoration: none;
+		}
+		.nav-link:hover {
+			text-decoration-line: underline overline;
+			transform: scale(1.1);
+		}
+		article {
+			display: flex;
+			flex-direction: column;
+			margin-top: 60px;
+			align-items: center;
+		}
+		#article {
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			font-size: 0.9em;
+			margin-top: 20px;
+			max-width: 1100px;
+		}
+		#p1 {
+			
+			width: 28%;
+		}
+		#p2 {
+			
+			width: 28%;
+		}
+		#p3 {
+			width: 28%;
+		}
+
+		@media (max-width: 600px){
+
+			#article {
+				display: flex;
+				flex-direction: column;}
+			#p1 {
+				width: 80%;}
+			#p2 {
+				width: 80%;}
+			#p3 {
+				width: 80%;}
+		}
+		#ancre2 {
+			margin-bottom: 0px;
+		}
+	</style>
+
+	<body>
+		<header id="header">
+			<img id="header-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Open_Source_Initiative_keyhole.svg/1200px-Open_Source_Initiative_keyhole.svg.png" alt="Logo">
+			<nav id="nav-bar">
+				<a class="nav-link" href="#ancre1">SUSCRIBE</a>
+				<a class="nav-link" href="#ancre2">VIDEO</a>
+				<a class="nav-link" href="#ancre3">ARTICLE</a>
+			</nav>
+		</header>
+		<div id="ancre1"></div>
+		<main>
+			<form id="form" action="https://www.freecodecamp.com/email-submit">
+
+				<label for="email">Suscribe for our newsletter !<br>
+					<input id="email" type="email" name="email" placeholder="Enter your email">
+				</label>
+				<div id="ancre2"></div>
+				<input id="submit" type="submit" value="SUSCRIBE">
+			</form>
+			<iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/6N78hBp8Scc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+			</iframe>
+			<div id="ancre3"></div>
+			<article>
+				<h2>Le linge doit-il forcément sentir bon ?</h2>
+				<div id="article">
+					<p id="p1">Notre société moderne nous a conditionnés : depuis l'enfance, nous associons la propreté de notre linge aux parfums des produits nettoyants que les groupes industriels nous vendent. Sensible aux odeurs, je n'aime guère changer de lessive. M'habituerai-je à une lessive maison dépourvue de la fragrance à laquelle je suis habituée ?</p>
+					<p id="p2">Pour pallier l'absence de parfum, beaucoup recommandent d'ajouter une dizaine de gouttes d'huiles essentielles à la recette. Julie n'est pas convaincue : "J'en mettait au début, mais je trouvais ça très dilué, cher et compliqué à fabriquer quand on pense aux kilos de fleurs nécessaires. Aujourd'hui, je préfère que mon linge ne sente rien. Ça dépend de la sensibilité de chacun."</p>
+					<p id="p3">Si vous y tenez, sachez que celle de lavande fine est la mieux tolérée, même si beaucoup lui préfèrent celle de tea tree. Dans tous les cas, avec une lessive maison, évitez d'attendre une journée avant d'étendre votre linge, ça limitera les risques d'odeur d'humidité, que les lessives ordinaires masquent mieux, à coups d'arômes artificiels.</p>
+				</div>
+			</article>
+		</main>
+	</body>
+</html>

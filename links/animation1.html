@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<style type="text/css">
+		.Boite {
+			height: 500px;
+			width: 450px;
+			border-width: 5px;
+			background-color: green;
+			position: relative;
+			top: 40px;
+			box-shadow: 0 10px 20px black;
+			border: 2px solid black;
+			border-radius: 15px;
+			margin: auto;
+		}
+		.Boule {
+			height: 30px;
+			width: 30px;
+			border-radius: 50%;
+			position: absolute;
+			background-color: purple;
+			border: 2px solid black;
+			top: 45px;
+			box-shadow: 3px 3px 10px black;
+			animation-name: rebond;
+			animation-duration: 4s;
+			animation-iteration-count: infinite;
+		}
+		@keyframes rebond{
+			50% {
+				top: 400px;
+				background-color: orange;
+			}
+		}
+		#boule1 {
+			left: 50px;
+			animation-duration: 1500ms;
+		}
+		#boule2 {
+			left: 100px;
+			animation-duration: 1502ms;
+		}
+		#boule3 {
+			left: 150px;
+			animation-duration:1504ms;
+		}
+		#boule4 {
+			left: 200px;
+			animation-duration: 1506ms;
+		}
+		#boule5 {
+			left: 250px;
+			animation-duration: 1508ms;
+		}
+		#boule6 {
+			left: 300px;
+			animation-duration: 1510ms;
+		}
+		#boule7 {
+			left: 350px;
+			animation-duration: 1512ms;
+		}
+	</style>
+
+	<div class="Boite">
+		<div class="Boule" id="boule1"></div>
+		<div class="Boule" id="boule2"></div>
+		<div class="Boule" id="boule3"></div>
+		<div class="Boule" id="boule4"></div>
+		<div class="Boule" id="boule5"></div>
+		<div class="Boule" id="boule6"></div>
+		<div class="Boule" id="boule7"></div>
+	</div>
+	
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Recrutement Super-Héros</title>
+		<link href="https://fonts.googleapis.com/css2?family=Lemonada:wght@500&family=Orbitron:wght@600&display=swap" rel="stylesheet">
+	</head>
+
+	<style type="text/css">
+		#email:invalid {
+			color: red;
+		}
+		#number:invalid {
+			color: red;
+		}
+		header{
+			color: #FFDF7E;
+		}
+		body {
+			background-color: #000059;
+			color: white;
+			text-align: center;
+			font-family: 'Orbitron', sans-serif;
+		}
+		h2 {
+			font-size: 18px;
+		}
+		label {
+			font-family: 'Lemonada', cursive;
+			font-size: 13px
+		}
+		form {
+			display: flex;
+			flex-direction: column;
+			width: 95%;
+			margin: auto;
+			background-color: hsla(0, 0%, 0%, 0);
+		}
+		main {
+			border-radius: 10px;
+			background-color: hsla(240, 24%, 100%, 0.4);
+			width: 70%;
+			max-width: 500px;	
+			justify-content: center;
+			margin: auto;
+			margin-top: 50px;
+			text-align: left;
+			padding-top: 20px;
+			padding-bottom: 20px;
+			color: black;
+		}
+		#additional {
+			width: 400px;
+			height: 150px;
+			margin: auto;
+			border-radius: 5px
+		}
+		button {
+			color: #060066;
+			background-color: #FFFF00;
+			border-radius: 10px;
+			height: 30px;
+			border: solid black 1px;
+		}
+		button:hover{
+			box-shadow: 10px 10px 25px black;
+		}
+	</style>
+	
+	<body>
+		<header>
+			<h1 id="title">Questionaire de recrutement pour candidats à<br>la ligue de Super-Héros</h1>
+			<p id="description">Merci de répondre le plus sincèrement possible aux questions posées</p>
+		</header>
+
+		<main>
+			<form id="survey-form" action="/url#########">
+				<div id="info">
+					<h2>INFORMATIONS PERSONNELLES</h2>
+					<label for="name" id="name-label">NOM et PRÉNOM</label><br>
+					<input id="name" type="text" name="name" placeholder="Votre nom" required><br><br>
+
+					<label for="email" id="email-label">ADRESSE EMAIL</label><br>
+					<input id="email" type="email" name="email" placeholder="Votre email" required><br><br>
+
+					<label for="age" id="number-label">ÂGE (entre  18 et 100 ans)</label><br>
+					<input id="number" type="number" name="age" placeholder="18" min="18" max="100" required><br><br>
+
+					<label for="dropdown" id="dropdown-label">SELECTIONNEZ VOTRE ORIGINE</label><br>
+					<select id="dropdown" name="origine">
+						<option value="---">------</option>
+						<option value="Terrestre">Terrestre</option>
+						<option value="Système Solaire">Système Solaire</option>
+						<option value="Galaxy">Galaxy</option>
+					</select><br><br>
+				</div>
+				<div id="objectif">
+					<h2>QUEL EST VOTRE OBJECTIF ?</h2>
+					<label for="Sauver l'univers">
+						<input id="Sauver l'univers" type="radio" name="objectif" value="Sauver l'univers">Sauver l'univers
+					</label><br>
+		 			<label for="Détruire l'univers">
+		 				<input id="Détruire l'univers" type="radio" name="objectif" value="Détruire l'univers">Détruire l'univers
+		 			</label><br>
+		 			<label for="Ne se prononce pas">
+		 				<input id="Ne se prononce pas" type="radio" name="objectif" value="Ne se prononce pas">Ne se prononce pas
+	 				</label><br><br>
+	 			</div>
+	 			<div id="qualité">
+	 				<h2>QUELLE QUALITÉ VOUS DÉFINIE LE MIEUX ? (plusieurs réponses possibles)</h2>
+		 			<label for="Courage">
+						<input id="Courage" type="checkbox" value="COURAGE">Courage
+					</label><br>
+		 			<label for="Intelligence">
+		 				<input id="Intelligence" type="checkbox" value="INTELLIGENCE">Intelligence
+		 			</label><br>
+		 			<label for="Persévérance">
+		 				<input id="Persévérance" type="checkbox" value="PERSÉVÉRANCE">Persévérance
+		 			</label><br><br>
+		 		</div>
+		 		<div id="complémentaire">
+		 			<h2>INFORMATIONS COMPLÉMENTAIRES</h2>
+	 				<textarea id="additional" name="additional" placeholder="Écrivez vos informations ici ..."></textarea><br><br>
+ 				</div>
+ 				<button id="submit" >ENVOYER !</button>
+			</form>
+		</main>
+	</body>
+</html>

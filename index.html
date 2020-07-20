@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Personal Portfolio Webpage</title>
+		<link href="https://fonts.googleapis.com/css2?family=Kalam:wght@700&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Aladin&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Spartan:wght@600&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+	</head>
+	<style>
+		body{
+			background: linear-gradient(30deg, #FFFF00, #FF9439);
+			font-family: 'Kalam', cursive;
+		}
+
+		/*Le bandeau supérieur*/
+
+		header{
+			background-color: #040028;
+			position: fixed;
+			top: 0px;
+			left: 0px;
+			width: 100%;
+			height: 7vh;
+			display: flex;
+			justify-content: flex-end;
+			align-items: center;
+		}
+		#navbar{			
+			height: 100%;
+			width: 40%;
+			display: flex;
+			flex-direction: row;
+			justify-content: space-around;
+			align-items: center;
+			max-width: 50%;
+			margin-right: 3vw;
+		}
+		.lien_nav{
+			text-decoration: none;
+			color: #FFE100;
+			font-size: 1.4em;
+		}
+		.lien_nav:hover{
+			color: #FF8585;
+		}
+
+		/* LE MESSAGE DE BIENVENUE */
+
+		#welcome-section{
+			font-size: 2em;
+			color: black;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			height: 100vh;
+			width: 100%;
+		}
+
+		/* LES PROJETS */
+
+		#projects{
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+			flex-wrap: wrap;
+		}
+		.project-tile{
+			font-family: 'Aladin', cursive;
+			line-height: 2em;
+			color: #FFE100;
+			text-decoration: none;
+			text-align: center;
+			font-size: 1.5em;
+
+			width: 40%;
+			margin: 1% 1% 1% 1%;
+			padding: 0px 5px 0px 5px;
+			background-color: #232F66;
+			border-radius: 10px;
+		}
+		.project-tile:hover{
+		box-shadow: 10px 10px 25px black;
+		}
+		.image{
+			max-width: 100%;
+			height: auto;
+			border-radius: 10px;
+		}
+
+		@media (max-width: 650px){
+			#projects{
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+			}
+			.project-tile{
+				width: 70%;
+				margin: 2% 5% 2% 5%;
+			}
+		}
+		@media (min-width: 1000px){
+			#projects{
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+				align-items: center;
+			}
+			.project-tile{
+				width: 25%;
+				margin: 1.5% 1.5% 1.5% 1.5%;
+			}
+		}
+
+		/* LE BAS DE PAGE */
+
+		footer{
+			font-family: 'Roboto Mono', monospace;
+			color: black;
+			text-align: center;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			width: 100%;
+		}
+		#phrase_footer{
+			max-width: 80%;
+			margin-bottom: 5vh;
+		}
+		#profile-link{
+			font-family: 'Spartan', sans-serif;
+			color: white;
+			text-decoration: none;
+			background-color: #2B2B2B;
+			padding: 1em 3% 1em 3%;
+			margin-left: 3%;
+			margin-right: 3%;
+			border-radius: 3px;
+		}
+		#profile-link:hover{
+			box-shadow: 10px 10px 25px black;
+		}
+	</style>
+
+
+
+
+	<body>
+		<header>
+			<nav id="navbar">
+				<a id="About" class="lien_nav" href="#welcome-section">About</a>
+				<a id="Work" class="lien_nav" href="#projects">Work</a>
+				<a id="Contact" class="lien_nav" href="#profile-link">Contact</a>
+			</nav>
+		</header>
+		<div id="welcome-section">
+			<h1>Bienvenue sur mon portfolio</h1>
+		</div>
+		<main id="projects">		
+			<a class="project-tile" href="links/tribute.html" target="_blank">Tribute Page<img class="image" src="images/tribute.png" alt="lien pour le projet Batman"></a>
+			<a class="project-tile" href="links/product.html" target="_blank">Product Landing Page<img class="image" src="images/product.png" alt="lien pour la page produit"></a>
+			<a class="project-tile" href="links/documentation.html" target="_blank">Documentation Java<img class="image" src="images/documentation.png" alt="lien pour la documentation Java"></a>
+			<a class="project-tile" href="links/survey.html" target="_blank">Survey form<img class="image" src="images/survey.png" alt="lien pour le projet Batman"></a>
+			<a class="project-tile" href="links/animation1.html" target="_blank">Animation_1<img class="image" src="images/animation1.png" alt="lien pour l'animation"></a>
+			<a class="project-tile" href="links/animation2.html" target="_blank">Animation_2<img class="image" src="images/animation2.png" alt="lien pour l'animation"></a>
+		</main>
+		<footer>
+			<h2 id="phrase_footer">Vous pouvez visiter mon profil FreeCodeCamp en suivant le lien ci-dessous</h2>
+			<a id="profile-link" href="https://www.freecodecamp.org/jejedev" target="_blank">FreeCodeCamp</a>
+		</footer>
+	</body>
+</html>
